@@ -1,0 +1,184 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 15px;
+  background: #f2f2f2;
+  color: #222;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+.intro {
+  color: #666;
+  margin-top: 5px;
+}
+
+section {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 6px 12px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+/* ---- task 1 ---- */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #999;
+  padding: 6px 10px;
+  text-align: left;
+}
+
+th {
+  background: #ddd;
+}
+
+.over {
+  color: red;
+  font-weight: bold;
+}
+
+/* ---- task 2 ---- */
+#dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.node {
+  border: 1px solid #888;
+  padding: 15px;
+  width: 110px;
+  text-align: center;
+  background: #e6ffe6;
+}
+
+.warning-state {
+  color: white;
+  font-weight: bold;
+  border: 2px dashed black;
+}
+
+/* ---- task 3 ---- */
+#chart-outer {
+  border: 2px solid #3366cc;
+  padding: 10px;
+  margin: 10px 0;
+  background: #eef3ff;
+}
+
+#chart-body {
+  border: 2px solid #339933;
+  padding: 10px;
+  margin-top: 5px;
+  background: #eefaee;
+}
+
+.bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.bar {
+  width: 50px;
+  background: #cc6600;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.bar-link {
+  font-size: 13px;
+  margin-left: 15px;
+}
+
+.two-col {
+  display: flex;
+  gap: 20px;
+}
+
+.two-col > div {
+  flex: 1;
+}
+
+pre {
+  background: #eee;
+  padding: 8px;
+  font-size: 13px;
+  min-height: 90px;
+  overflow-x: auto;
+}
+
+#event-log {
+  font-size: 13px;
+  padding-left: 20px;
+}
+
+/* ---- task 4 ---- */
+.collapsible-header {
+  background: #ddd;
+  border: 1px solid #999;
+  padding: 8px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.collapsible-content {
+  border: 1px solid #999;
+  border-top: none;
+  padding: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.has-tip {
+  border-bottom: 1px dotted black;
+  cursor: help;
+}
+
+.tooltip {
+  position: fixed;
+  background: #333;
+  color: white;
+  padding: 6px 10px;
+  font-size: 13px;
+  max-width: 200px;
+  pointer-events: none;
+}
+
+/* ---- task 5 ---- */
+.error-banner {
+  background: #ffdddd;
+  border: 1px solid red;
+  color: #a00000;
+  padding: 8px;
+  margin-top: 10px;
+}
+
+#api-output {
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .two-col {
+    flex-direction: column;
+  }
+}

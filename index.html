@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sensor Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Sensor Dashboard</h1>
+  <p class="intro">DOM + JavaScript practice - 5 small tasks on one page.</p>
+
+  <!-- TASK 1 -->
+  <section>
+    <h2>1. Sensor alerts</h2>
+    <p id="summary"></p>
+    <div id="alert-table"></div>
+  </section>
+
+  <!-- TASK 2 -->
+  <section>
+    <h2>2. Dashboard nodes (TreeWalker)</h2>
+    <button id="scan-btn">Scan for offline nodes</button>
+    <div id="dashboard">
+      <div class="node" data-status="online">Server A</div>
+      <div class="node" data-status="offline">Server B</div>
+      <div class="node" data-status="online">Router 1</div>
+      <div class="node" data-status="offline">Camera 4</div>
+      <div class="node" data-status="online">Database</div>
+    </div>
+    <p id="scan-result"></p>
+  </section>
+
+  <!-- TASK 3 -->
+  <section>
+    <h2>3. Event flow (capture vs bubble)</h2>
+    <label>
+      <input type="checkbox" id="stop-box"> stop propagation at the bar
+    </label>
+
+    <div id="chart-outer">
+      outer container
+      <div id="chart-body">
+        chart body
+        <div class="bars">
+          <div class="bar" id="bar1" style="height: 40px;">1</div>
+          <div class="bar" id="bar2" style="height: 80px;">2</div>
+          <div class="bar" id="bar3" style="height: 60px;">3</div>
+          <a class="bar-link" href="https://example.com">test link</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <h3>Event info</h3>
+        <pre id="event-info">click a bar...</pre>
+      </div>
+      <div>
+        <h3>Order of events</h3>
+        <ol id="event-log"></ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- TASK 4 -->
+  <section>
+    <h2>4. Collapsible + tooltip</h2>
+    <div id="collapsible-area"></div>
+  </section>
+
+  <!-- TASK 5 -->
+  <section>
+    <h2>5. Fetching data</h2>
+    <button id="load-btn">Load data</button>
+    <button id="fail-btn">Load (force error)</button>
+    <div id="banner-area"></div>
+    <div id="api-output">Nothing loaded yet.</div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
